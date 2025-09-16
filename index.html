@@ -1,8 +1,98 @@
-# SKODA
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>SKODA - Solución de Negocio</title>
+  <style>
+    :root{
+      --bg:#f6f8fa;
+      --card:#ffffff;
+      --accent:#0f4c81;
+      --muted:#6b7280;
+      --maxw:900px;
+    }
+    body{font-family:Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial; background:var(--bg); color:#111; margin:0; padding:32px; display:flex; justify-content:center;}
+    .container{max-width:var(--maxw); width:100%;}
+    .card{background:var(--card); border-radius:12px; box-shadow:0 6px 20px rgba(16,24,40,0.06); padding:28px; margin-bottom:18px;}
+    h1{font-size:1.5rem; margin:0 0 8px; color:var(--accent);}
+    h2{font-size:1.05rem; margin:18px 0 8px;}
+    p.lead{margin:0 0 12px; color:var(--muted);}
+    ul{margin:8px 0 0 1.1rem; color:#111;}
+    .badge{display:inline-block; padding:6px 10px; border-radius:999px; background:rgba(15,76,129,0.08); color:var(--accent); font-weight:600; font-size:0.85rem;}
+    .results{display:grid; grid-template-columns:1fr; gap:12px; margin-top:10px;}
+    .result-item{padding:12px; border-radius:8px; background:#fbfdff; border:1px solid rgba(15,76,129,0.04);}
+    footer{margin-top:12px; font-size:0.85rem; color:var(--muted);}
+    @media(min-width:700px){ .results{grid-template-columns:repeat(2,1fr);} }
+  </style>
+</head>
+<body>
+  <main class="container">
+    <section class="card" aria-labelledby="title">
+      <div style="display:flex;align-items:center;gap:12px;">
+        <div class="badge">Building Cloud Business Applications for SKODA</div>
+      </div>
 
-## 🏢 Descripción General
+      <h1 id="title">📌 Descripción General del Proyecto – Solución de Negocio para SKODA</h1>
 
-**EuroCars SA** es una empresa automotriz representante de la marca **SKODA**, dedicada a la venta de vehículos, repuestos y accesorios originales, así como al servicio postventa en sus tres talleres especializados. Con más de 10 años de presencia en el Perú, la marca enfrenta el desafío de mejorar su facturación en el área de postventa.
+      <p class="lead">
+        El presente proyecto tiene como objetivo implementar una <strong>solución de negocio</strong> para SKODA que permita <strong>registrar y modificar las órdenes de trabajo generadas en los talleres</strong>,
+        automatizar reportes y generar alertas basadas en indicadores clave del negocio.
+      </p>
 
-Durante los últimos dos años, la facturación de servicios de taller ha estado por debajo del presupuesto anual comprometido con el Directorio. Por ello, se vuelve estratégico monitorear mensualmente el desempeño del **Indicador del Ticket Promedio** para tomar acciones correctivas.
+      <p>
+        La propuesta integra una arquitectura moderna en la nube, diseñada para centralizar los datos operativos,
+        optimizar su procesamiento mediante procesos ETL y ofrecer acceso flexible y seguro a través de aplicaciones low-code
+        y herramientas de análisis de autoservicio.
+      </p>
 
+      <p>
+        Se emplean tecnologías cloud como <strong>Azure SQL, Microsoft Fabric (Data Factory &amp; Warehouse), Power Apps, Power Automate y Power BI</strong>,
+        lo que brinda a SKODA una solución integral, automatizada y escalable para la <strong>toma de decisiones en tiempo real</strong>.
+      </p>
+    </section>
+
+    <section class="card" aria-labelledby="objectives">
+      <h2 id="objectives">🎯 Objetivos Principales</h2>
+      <ul>
+        <li>Implementar una base de datos en Azure SQL para el registro estructurado de órdenes de trabajo.</li>
+        <li>Integrar Microsoft Power Apps como capa de ingreso, edición y consulta de datos.</li>
+        <li>Desarrollar procesos ETL con Fabric Data Factory y notebooks en Python.</li>
+        <li>Construir un Data Warehouse en Microsoft Fabric para consolidación y análisis.</li>
+        <li>Automatizar flujos e integraciones mediante Power Automate.</li>
+        <li>Facilitar el análisis con reportes interactivos y storytelling en Power BI.</li>
+      </ul>
+    </section>
+
+    <section class="card" aria-labelledby="results">
+      <h2 id="results">✨ Resultados Clave</h2>
+      <div class="results">
+        <div class="result-item">
+          <strong>Automatización de procesos</strong><br />
+          Reducción de tiempos operativos mediante pipelines ETL y automatizaciones con Power Automate.
+        </div>
+        <div class="result-item">
+          <strong>Velocidad en la obtención de insights</strong><br />
+          Reportes y tableros en Power BI que entregan información accionable más rápido.
+        </div>
+        <div class="result-item">
+          <strong>Flexibilidad y actualización en tiempo real</strong><br />
+          Capacidades para ingresar y editar registros desde Power Apps con persistencia en Azure SQL.
+        </div>
+        <div class="result-item">
+          <strong>Alertas proactivas</strong><br />
+          Notificaciones automáticas a clientes y gerentes de operaciones según indicadores definidos.
+        </div>
+      </div>
+    </section>
+
+    <footer class="card" aria-labelledby="note">
+      <h2 id="note">📌 Nota</h2>
+      <p style="margin:0;">
+        Este documento está pensado para publicarse en un portafolio profesional (por ejemplo GitHub Pages).
+        ¿Quieres que genere también una versión breve para el README.md o una tarjeta de proyecto para tu portfolio?
+      </p>
+    </footer>
+  </main>
+</body>
+</html>
