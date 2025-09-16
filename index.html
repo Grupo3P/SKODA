@@ -12,7 +12,15 @@
       --muted:#6b7280;
       --maxw:900px;
     }
-    body{font-family:Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial; background:var(--bg); color:#111; margin:0; padding:32px; display:flex; justify-content:center;}
+    body{
+      font-family:Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+      background:var(--bg);
+      color:#111;
+      margin:0;
+      padding:32px;
+      display:flex;
+      justify-content:center;
+    }
     .container{max-width:var(--maxw); width:100%;}
     .card{background:var(--card); border-radius:12px; box-shadow:0 6px 20px rgba(16,24,40,0.06); padding:28px; margin-bottom:18px;}
     h1{font-size:1.5rem; margin:0 0 8px; color:var(--accent);}
@@ -20,38 +28,37 @@
     p.lead{margin:0 0 12px; color:var(--muted);}
     ul{margin:8px 0 0 1.1rem; color:#111;}
     .badge{display:inline-block; padding:6px 10px; border-radius:999px; background:rgba(15,76,129,0.08); color:var(--accent); font-weight:600; font-size:0.85rem;}
-    .results{display:grid; grid-template-columns:1fr; gap:12px; margin-top:10px;}
     .result-item{padding:12px; border-radius:8px; background:#fbfdff; border:1px solid rgba(15,76,129,0.04);}
+    .results{display:flex; flex-direction:column; gap:12px; margin-top:10px;}
+    img.responsive{max-width:100%; border-radius:12px; box-shadow:0 4px 14px rgba(0,0,0,0.1);}
     footer{margin-top:12px; font-size:0.85rem; color:var(--muted);}
-    @media(min-width:700px){ .results{grid-template-columns:repeat(2,1fr);} }
   </style>
 </head>
 <body>
   <main class="container">
+
+    <!-- Descripción general -->
     <section class="card" aria-labelledby="title">
       <div style="display:flex;align-items:center;gap:12px;">
         <div class="badge">Building Cloud Business Applications for SKODA</div>
       </div>
-
       <h1 id="title">📌 Descripción General del Proyecto – Solución de Negocio para SKODA</h1>
-
       <p class="lead">
         El presente proyecto tiene como objetivo implementar una <strong>solución de negocio</strong> para SKODA que permita <strong>registrar y modificar las órdenes de trabajo generadas en los talleres</strong>,
         automatizar reportes y generar alertas basadas en indicadores clave del negocio.
       </p>
-
       <p>
         La propuesta integra una arquitectura moderna en la nube, diseñada para centralizar los datos operativos,
         optimizar su procesamiento mediante procesos ETL y ofrecer acceso flexible y seguro a través de aplicaciones low-code
         y herramientas de análisis de autoservicio.
       </p>
-
       <p>
         Se emplean tecnologías cloud como <strong>Azure SQL, Microsoft Fabric (Data Factory &amp; Warehouse), Power Apps, Power Automate y Power BI</strong>,
         lo que brinda a SKODA una solución integral, automatizada y escalable para la <strong>toma de decisiones en tiempo real</strong>.
       </p>
     </section>
 
+    <!-- Objetivos -->
     <section class="card" aria-labelledby="objectives">
       <h2 id="objectives">🎯 Objetivos Principales</h2>
       <ul>
@@ -64,26 +71,18 @@
       </ul>
     </section>
 
+    <!-- Resultados -->
     <section class="card" aria-labelledby="results">
       <h2 id="results">✨ Resultados Clave</h2>
       <div class="results">
-        <div class="result-item">
-          <strong>Automatización de procesos</strong><br />
-          Reducción de tiempos operativos mediante pipelines ETL y automatizaciones con Power Automate.
-        </div>
-        <div class="result-item">
-          <strong>Velocidad en la obtención de insights</strong><br />
-          Reportes y tableros en Power BI que entregan información accionable más rápido.
-        </div>
-        <div class="result-item">
-          <strong>Flexibilidad y actualización en tiempo real</strong><br />
-          Capacidades para ingresar y editar registros desde Power Apps con persistencia en Azure SQL.
-        </div>
-        <div class="result-item">
-          <strong>Alertas proactivas</strong><br />
-          Notificaciones automáticas a clientes y gerentes de operaciones según indicadores definidos.
-        </div>
-        
+        <div class="result-item"><strong>Automatización de procesos</strong><br />Reducción de tiempos operativos mediante pipelines ETL y automatizaciones con Power Automate.</div>
+        <div class="result-item"><strong>Velocidad en la obtención de insights</strong><br />Reportes y tableros en Power BI que entregan información accionable más rápido.</div>
+        <div class="result-item"><strong>Flexibilidad y actualización en tiempo real</strong><br />Capacidades para ingresar y editar registros desde Power Apps con persistencia en Azure SQL.</div>
+        <div class="result-item"><strong>Alertas proactivas</strong><br />Notificaciones automáticas a clientes y gerentes de operaciones según indicadores definidos.</div>
+      </div>
+    </section>
+
+    <!-- Solución Cloud -->
     <section class="card" aria-labelledby="solution">
       <h2 id="solution">☁️ Solución de Negocio Cloud con Microsoft Fabric, Power Platform y Power BI</h2>
       <p>
@@ -97,37 +96,27 @@
         <li>📊 <strong>Power BI</strong> para el análisis de datos e inteligencia de negocios de autoservicio.</li>
       </ul>
     </section>
-        
+
+    <!-- Arquitectura -->
     <section class="card" aria-labelledby="architecture">
       <h2 id="architecture">🚀 Diagrama de la Arquitectura del Proyecto</h2>
-    
-      <!-- Imagen del diagrama -->
       <div style="text-align:center; margin:16px 0;">
-        <img src="Diagrama de Arquitectura.jpeg" alt="Diagrama de la arquitectura del proyecto SKODA" style="max-width:100%; border-radius:12px; box-shadow:0 4px 14px rgba(0,0,0,0.1);" />
+        <img src="Diagrama-Arquitectura.jpeg" alt="Diagrama de la arquitectura del proyecto SKODA" class="responsive" />
       </div>
-    
       <p>
         La arquitectura del proyecto SKODA se estructura en capas, integrando fuentes de datos, aplicaciones, procesos ETL y herramientas de análisis para
         ofrecer una solución completa, escalable y orientada a la gestión de órdenes de trabajo en los talleres.
       </p>
-    
       <ul>
         <li><strong>Data Sources:</strong> Los datos provienen de órdenes de trabajo registradas en talleres y de archivos complementarios en Excel. Estos se integran de forma inicial mediante procesos manuales o semi-automatizados.</li>
-    
         <li><strong>Data Layer:</strong> Centraliza la información en una base de datos relacional en <em>Azure SQL</em>, con almacenamiento seguro y estructurado en la nube. También recibe datos directamente desde <em>Power Apps</em>.</li>
-    
         <li><strong>Application Layer:</strong> Utiliza <em>Microsoft Power Apps</em> como interfaz gráfica para el ingreso, edición y consulta de datos, conectada de forma nativa con Azure SQL.</li>
-    
         <li><strong>ETL Layer:</strong> Desarrollada con <em>Pipelines</em> y <em>Dataflows</em> de Microsoft Fabric, automatiza el flujo hacia el Data Warehouse e incorpora <em>Notebooks en Python</em> para validación y envío de notificaciones por correo.</li>
-    
         <li><strong>Data Warehouse Layer:</strong> Consolida mediante <em>Fabric Data Warehouse</em> los datos ya transformados, optimizando el análisis avanzado y la generación de reportes confiables.</li>
-    
         <li><strong>Presentation Layer:</strong> Ofrece reportes interactivos en <em>Power BI Service</em> y acceso en Excel, facilitando la toma de decisiones basada en información actualizada.</li>
-    
         <li><strong>User Access:</strong> Gestiona accesos según roles definidos en <em>Azure</em>, <em>Power Apps</em> y <em>Power BI</em>. Los usuarios reciben notificaciones automáticas tras cada actualización, garantizando trazabilidad y comunicación efectiva.</li>
       </ul>
     </section>
-
 
   </main>
 </body>
