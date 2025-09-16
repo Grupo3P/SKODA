@@ -281,7 +281,182 @@
       </div>
     </section>
 
+    <section id="etl-layer">
+      <h2>⚙️ ETL Layer (Capa de Extracción, Transformación y Carga)</h2>
+      <p>
+        El sistema SKODA emplea un flujo de datos automatizado y eficiente que conecta 
+        múltiples capas tecnológicas dentro del ecosistema Microsoft. Este flujo asegura 
+        la correcta integración, transformación y disponibilidad de los datos para la 
+        toma de decisiones empresariales.
+      </p>
     
+      <h3>1. Origen de Datos</h3>
+      <p>
+        Los datos se registran en <strong>Power Apps</strong>, donde los usuarios 
+        ingresan operaciones de ventas, clientes, vehículos, servicios y talleres. 
+        Esta información se almacena en <strong>Azure SQL Database</strong>.
+      </p>
+    
+      <h3>2. Pipeline de Transformación (Dataflow)</h3>
+      <p>
+        El proceso de <strong>extracción, transformación y carga</strong> se realiza 
+        mediante un <strong>Dataflow</strong> en Microsoft Fabric, que limpia, 
+        estandariza y enriquece los datos antes de insertarlos en el Data Warehouse.
+      </p>
+      <div style="text-align:center; margin:16px 0;">
+        <img src="Capa de Extracción/PipeLine ETL.jpg" 
+             alt="Pipeline de Transformación con Dataflow" 
+             class="responsive" />
+      </div>
+    
+      <h3>3. Automatización con Notebooks</h3>
+      <p>
+        Una vez concluida la transformación, se ejecuta un 
+        <strong>Notebook en Python</strong> que valida el proceso, garantiza trazabilidad 
+        y prepara las notificaciones correspondientes.
+      </p>
+      <div style="text-align:center; margin:16px 0;">
+        <img src="Capa de Extracción/01.Notebook - Reporte Ticket Promedio.jpg" 
+             alt="Notebook en Python para validación del proceso" 
+             class="responsive" />
+      </div>
+    
+      <h3>4. Comunicación y Seguridad</h3>
+      <p>
+        El sistema envía automáticamente un correo electrónico notificando 
+        el éxito o los errores del proceso ETL. Esto asegura transparencia 
+        y confianza en la actualización de datos diaria.
+      </p>
+      <div style="text-align:center; margin:16px 0;">
+        <img src="Capa de Extracción/01.Reporte Ticket Promedio.jpg" 
+             alt="Correo de notificación del pipeline ETL" 
+             class="responsive" />
+      </div>
+    </section>
+
+    <section id="data-warehouse-layer">
+      <h2>🏛️ Data Warehouse Layer (Capa de Almacén de Datos)</h2>
+      <p>
+        En el proyecto <strong>SKODA</strong>, esta capa constituye el centro estructurado 
+        del sistema analítico. Aquí se reciben los datos procesados desde la capa de ETL, 
+        mediante <strong>Dataflows</strong>, y se almacenan en 
+        <strong>Azure SQL Database</strong>. Los datos son normalizados y organizados 
+        para facilitar su consulta, análisis y visualización.
+      </p>
+    
+      <p>
+        Dentro del Data Warehouse se construyen <strong>medidas calculadas</strong>, 
+        relaciones entre tablas clave (<em>órdenes de trabajo, vehículos, clientes, 
+        servicios, talleres y canales de venta</em>) e integración de 
+        <strong>dimensiones de análisis</strong>. Una pieza fundamental es la 
+        <strong>tabla calendario</strong>, que habilita análisis temporales detallados 
+        (día, mes, trimestre, año), comparaciones entre periodos y segmentación dinámica 
+        de datos en Power BI.
+      </p>
+    
+      <p>
+        Gracias a este diseño optimizado, el Data Warehouse asegura:
+        <ul>
+          <li>Base sólida para la inteligencia de negocios</li>
+          <li>Escalabilidad en el manejo de datos</li>
+          <li>Trazabilidad en las transformaciones</li>
+          <li>Eficiencia operativa en los reportes y análisis</li>
+        </ul>
+      </p>
+    
+      <h3>Vista del Data Warehouse en Microsoft Fabric</h3>
+      <div style="text-align:center; margin:16px 0;">
+        <img src="Capa de Almacén de Datos/Data Warehouse - Model Layout.jpg" 
+             alt="Vista del modelo de Data Warehouse del proyecto SKODA" 
+             class="responsive" />
+      </div>
+    </section>
+    
+    <section class="card" aria-labelledby="presentation">
+      <h2 id="presentation">📊 Presentation Layer (Capa de Presentación)</h2>
+      <p>
+        La capa de presentación del proyecto <strong>SKODA</strong> está implementada con 
+        <em>Microsoft Power BI</em>, transformando los datos en reportes interactivos que
+        permiten monitorear el desempeño de los talleres y de la postventa. Cada informe fue 
+        diseñado para apoyar la toma de decisiones ejecutivas y brindar un análisis detallado 
+        de <em>órdenes de trabajo, servicios, clientes y vehículos</em>.
+      </p>
+    
+      <ul>
+        <li>📌 <strong>Indicadores clave (KPIs):</strong> Seguimiento de métricas como Ticket Promedio, volumen de órdenes y eficiencia de talleres.</li>
+        <li>📌 <strong>Narrativa visual:</strong> Cada informe responde a preguntas de negocio concretas, resaltando resultados destacados.</li>
+        <li>📌 <strong>Análisis interactivo:</strong> Filtros dinámicos por taller, servicio, vehículo, cliente o periodo de tiempo.</li>
+        <li>📌 <strong>Datos actualizados:</strong> Reportes alimentados desde el Data Warehouse en Azure SQL con procesos ETL automáticos.</li>
+      </ul>
+    
+      <p>
+        Esta capa convierte el ecosistema de datos de <strong>SKODA</strong> en una herramienta 
+        estratégica para la <em>gestión de postventa</em>, optimizando la operación de talleres, 
+        detectando oportunidades de mejora y fortaleciendo la relación con los clientes.
+      </p>
+    
+      <!-- Imagen 1: Indicadores generales -->
+      <div style="text-align:center; margin:16px 0;">
+        <img src="Capa de Presentación/03.Indicadores.jpg" 
+             alt="Reporte de indicadores generales del proyecto SKODA" 
+             class="responsive" />
+      </div>
+    
+      <!-- Imagen 2: Ticket promedio en talleres -->
+      <div style="text-align:center; margin:16px 0;">
+        <img src="Capa de Presentación/06.Pregunta 1.jpg" 
+             alt="Reporte de Ticket Promedio en talleres - Mayo 2025" 
+             class="responsive" />
+        <p style="text-align:center;"><em>Ticket promedio de los talleres en mayo 2025, resaltando el más alto.</em></p>
+      </div>
+    
+      <!-- Imagen 3: Ticket promedio por servicio -->
+      <div style="text-align:center; margin:16px 0;">
+        <img src="Capa de Presentación/11.Pregunta 6.jpg" 
+             alt="Reporte de Ticket Promedio por servicio - Año 2025" 
+             class="responsive" />
+        <p style="text-align:center;"><em>Ticket promedio por servicio en 2025, resaltando el más alto.</em></p>
+      </div>
+    
+      <!-- Imagen 4: Ticket promedio por distrito -->
+      <div style="text-align:center; margin:16px 0;">
+        <img src="Capa de Presentación/12.Pregunta 7.jpg" 
+             alt="Reporte de Ticket Promedio por distrito - Año 2025" 
+             class="responsive" />
+        <p style="text-align:center;"><em>Distrito con el ticket promedio más alto en 2025.</em></p>
+      </div>
+    </section>
+
+    <section class="card" aria-labelledby="conclusion">
+      <h2 id="conclusion">✅ Conclusión</h2>
+      <p>
+        El proyecto <strong>SKODA – Gestión de Órdenes de Servicio</strong> evidencia cómo la integración 
+        del <em>ecosistema Microsoft</em> —Power Apps, Azure SQL, Microsoft Fabric y Power BI— 
+        puede convertirse en el motor de una solución empresarial robusta, escalable y 
+        centrada en el usuario.
+      </p>
+      <p>
+        La arquitectura diseñada asegura que cada orden de servicio registrada en los talleres 
+        se procese de forma estructurada, trazable y automatizada, fortaleciendo la 
+        eficiencia operativa y la toma de decisiones estratégicas.
+      </p>
+    
+      <ul>
+        <li>📌 <strong>Centralización:</strong> Consolidación de órdenes de servicio, vehículos, clientes, talleres y servicios en una única fuente confiable.</li>
+        <li>📌 <strong>Automatización:</strong> Flujos ETL con Microsoft Fabric que reducen la intervención manual y garantizan datos precisos.</li>
+        <li>📌 <strong>Comunicación:</strong> Notificaciones automáticas que refuerzan la trazabilidad y el control operativo.</li>
+        <li>📌 <strong>Usabilidad:</strong> Power Apps como interfaz intuitiva para registrar y actualizar órdenes en los talleres.</li>
+        <li>📌 <strong>Análisis:</strong> Dashboards interactivos en Power BI que permiten entender indicadores clave como volumen de órdenes, servicios más frecuentes o ticket promedio.</li>
+        <li>📌 <strong>Seguridad:</strong> Acceso gobernado con roles en Azure que protegen la integridad de la información.</li>
+      </ul>
+    
+      <p>
+        En conjunto, esta solución representa un <strong>modelo de transformación digital 
+        para la gestión de órdenes de servicio</strong>, alineado con los objetivos de eficiencia, 
+        crecimiento y excelencia en la experiencia de cliente que demanda la industria automotriz. 
+        SKODA da un paso firme hacia un futuro más ágil, inteligente y conectado en sus talleres.
+      </p>
+    </section>
 
 
   </main>
