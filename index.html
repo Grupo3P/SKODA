@@ -83,20 +83,52 @@
           <strong>Alertas proactivas</strong><br />
           Notificaciones automáticas a clientes y gerentes de operaciones según indicadores definidos.
         </div>
-      </div>
+        
     <section class="card" aria-labelledby="solution">
-  <h2 id="solution">☁️ Solución de Negocio Cloud con Microsoft Fabric, Power Platform y Power BI</h2>
-  <p>
-    El proyecto SKODA implementa una <strong>solución de negocio moderna en la nube</strong>, diseñada para integrar y automatizar procesos críticos en la gestión de órdenes de trabajo de los talleres.
-    La arquitectura aprovecha los servicios de Microsoft para garantizar escalabilidad, flexibilidad y soporte en la toma de decisiones.
-  </p>
-  <ul>
-    <li>🧱 <strong>Microsoft Fabric Warehouse y Data Factory</strong> para la gestión, transformación y consolidación de datos.</li>
-    <li>⚙️ <strong>Azure SQL</strong> como base de datos estructurada para registrar y administrar órdenes de trabajo.</li>
-    <li>⚡ <strong>Power Apps</strong> para el desarrollo de aplicaciones low-code orientadas al ingreso y edición de información.</li>
-    <li>📊 <strong>Power BI</strong> para el análisis de datos e inteligencia de negocios de autoservicio.</li>
-  </ul>
-</section>
+      <h2 id="solution">☁️ Solución de Negocio Cloud con Microsoft Fabric, Power Platform y Power BI</h2>
+      <p>
+        El proyecto SKODA implementa una <strong>solución de negocio moderna en la nube</strong>, diseñada para integrar y automatizar procesos críticos en la gestión de órdenes de trabajo de los talleres.
+        La arquitectura aprovecha los servicios de Microsoft para garantizar escalabilidad, flexibilidad y soporte en la toma de decisiones.
+      </p>
+      <ul>
+        <li>🧱 <strong>Microsoft Fabric Warehouse y Data Factory</strong> para la gestión, transformación y consolidación de datos.</li>
+        <li>⚙️ <strong>Azure SQL</strong> como base de datos estructurada para registrar y administrar órdenes de trabajo.</li>
+        <li>⚡ <strong>Power Apps</strong> para el desarrollo de aplicaciones low-code orientadas al ingreso y edición de información.</li>
+        <li>📊 <strong>Power BI</strong> para el análisis de datos e inteligencia de negocios de autoservicio.</li>
+      </ul>
+    </section>
+        
+    <section class="card" aria-labelledby="architecture">
+      <h2 id="architecture">🚀 Diagrama de la Arquitectura del Proyecto</h2>
+    
+      <!-- Imagen del diagrama -->
+      <div style="text-align:center; margin:16px 0;">
+        <img src="Diagrama de Arquitectura.jpeg" alt="Diagrama de la arquitectura del proyecto SKODA" style="max-width:100%; border-radius:12px; box-shadow:0 4px 14px rgba(0,0,0,0.1);" />
+      </div>
+    
+      <p>
+        La arquitectura del proyecto SKODA se estructura en capas, integrando fuentes de datos, aplicaciones, procesos ETL y herramientas de análisis para
+        ofrecer una solución completa, escalable y orientada a la gestión de órdenes de trabajo en los talleres.
+      </p>
+    
+      <ul>
+        <li><strong>Data Sources:</strong> Los datos provienen de órdenes de trabajo registradas en talleres y de archivos complementarios en Excel. Estos se integran de forma inicial mediante procesos manuales o semi-automatizados.</li>
+    
+        <li><strong>Data Layer:</strong> Centraliza la información en una base de datos relacional en <em>Azure SQL</em>, con almacenamiento seguro y estructurado en la nube. También recibe datos directamente desde <em>Power Apps</em>.</li>
+    
+        <li><strong>Application Layer:</strong> Utiliza <em>Microsoft Power Apps</em> como interfaz gráfica para el ingreso, edición y consulta de datos, conectada de forma nativa con Azure SQL.</li>
+    
+        <li><strong>ETL Layer:</strong> Desarrollada con <em>Pipelines</em> y <em>Dataflows</em> de Microsoft Fabric, automatiza el flujo hacia el Data Warehouse e incorpora <em>Notebooks en Python</em> para validación y envío de notificaciones por correo.</li>
+    
+        <li><strong>Data Warehouse Layer:</strong> Consolida mediante <em>Fabric Data Warehouse</em> los datos ya transformados, optimizando el análisis avanzado y la generación de reportes confiables.</li>
+    
+        <li><strong>Presentation Layer:</strong> Ofrece reportes interactivos en <em>Power BI Service</em> y acceso en Excel, facilitando la toma de decisiones basada en información actualizada.</li>
+    
+        <li><strong>User Access:</strong> Gestiona accesos según roles definidos en <em>Azure</em>, <em>Power Apps</em> y <em>Power BI</em>. Los usuarios reciben notificaciones automáticas tras cada actualización, garantizando trazabilidad y comunicación efectiva.</li>
+      </ul>
+    </section>
+
+
   </main>
 </body>
 </html>
