@@ -101,7 +101,7 @@
     <section class="card" aria-labelledby="architecture">
       <h2 id="architecture">🚀 Diagrama de la Arquitectura del Proyecto</h2>
       <div style="text-align:center; margin:16px 0;">
-        <img src="Diagrama-Arquitectura.jpeg" alt="Diagrama de la arquitectura del proyecto SKODA" class="responsive" />
+        <img src="Diagrama de Arquitectura.jpeg" alt="Diagrama de la arquitectura del proyecto SKODA" class="responsive" />
       </div>
       <p>
         La arquitectura del proyecto SKODA se estructura en capas, integrando fuentes de datos, aplicaciones, procesos ETL y herramientas de análisis para
@@ -117,6 +117,55 @@
         <li><strong>User Access:</strong> Gestiona accesos según roles definidos en <em>Azure</em>, <em>Power Apps</em> y <em>Power BI</em>. Los usuarios reciben notificaciones automáticas tras cada actualización, garantizando trazabilidad y comunicación efectiva.</li>
       </ul>
     </section>
+
+    <section class="card" aria-labelledby="datalayer">
+      <h2 id="datalayer">🗄️ Data Layer (Capa de Datos) – Proyecto SKODA</h2>
+    
+      <p>
+        La base de datos del sistema postventa de <strong>SKODA</strong> ha sido diseñada para gestionar de forma eficiente las 
+        <strong>órdenes de trabajo generadas en talleres</strong>, así como la información asociada a vehículos, clientes, 
+        servicios y canales de venta. Su estructura normalizada garantiza integridad, consistencia y escalabilidad 
+        en un entorno cloud.
+      </p>
+    
+      <p>
+        Este modelo de datos se implementó en <strong>Azure SQL Database</strong>, permitiendo almacenamiento seguro y 
+        acceso confiable desde las aplicaciones y procesos integrados en Microsoft Fabric y Power Platform.
+      </p>
+    
+      <p>Las seis tablas principales que estructuran la solución son:</p>
+    
+      <ul>
+        <li>📋 <strong>Órdenes de Trabajo</strong><br />
+          Registra cada orden generada en los talleres, incluyendo datos de apertura, cierre, estado, tiempos de atención 
+          y costos asociados.</li>
+    
+        <li>🚗 <strong>Vehículos</strong><br />
+          Contiene información detallada de los autos atendidos: número de VIN, modelo, año de fabricación, kilometraje 
+          y vínculo con el cliente propietario.</li>
+    
+        <li>👤 <strong>Clientes</strong><br />
+          Centraliza los datos de los clientes: identificación, nombre, apellidos, datos de contacto y 
+          preferencias de comunicación.</li>
+    
+        <li>🛠️ <strong>Servicios</strong><br />
+          Define los servicios de postventa ofrecidos: mantenimientos, reparaciones, garantías y repuestos. 
+          Se relaciona con las órdenes de trabajo para análisis de costos e ingresos.</li>
+    
+        <li>🏢 <strong>Talleres</strong><br />
+          Registra las sedes autorizadas SKODA, incluyendo ubicación, capacidad operativa y disponibilidad de recursos.</li>
+    
+        <li>🛒 <strong>Canales de Venta</strong><br />
+          Lista los distintos canales a través de los cuales se generan o facturan órdenes de trabajo 
+          (presencial, online, convenios corporativos, etc.).</li>
+      </ul>
+    
+      <p>
+        Este modelo relacional en Azure SQL permite integrar datos provenientes de Power Apps y procesos ETL en Microsoft Fabric, 
+        ofreciendo una base sólida para el <strong>almacenamiento, transformación y análisis</strong>.
+      </p>
+    </section>
+
 
   </main>
 </body>
