@@ -40,39 +40,11 @@
     <!-- Descripción general -->
     <section class="card" aria-labelledby="title">
       
-      <div style="display:flex;align-items:center;gap:12px;">
-        <div class="badge">Building Cloud Business Applications for SKODA</div>
+      <div style="background:linear-gradient(90deg,#004aad,#0099cc);color:white;padding:10px 16px;border-radius:8px;font-weight:bold;font-size:1.1rem; margin-bottom:16px;">
+        🚀 Building Cloud Business Applications for SKODA
       </div>
-
-      <div style="display:flex;align-items:center;gap:12px;">
-  <div class="badge" style="background:#004aad;color:white;padding:6px 12px;border-radius:8px;font-weight:bold;display:flex;align-items:center;gap:8px;">
-    🚀 Building Cloud Business Applications for SKODA
-  </div>
-</div>
-
-<div style="border-left:5px solid #004aad;padding-left:12px;font-weight:bold;font-size:1.1rem;color:#004aad;">
-  🚗 Building Cloud Business Applications for SKODA
-</div>
-
-<div style="background:linear-gradient(90deg,#004aad,#0099cc);color:white;padding:10px 16px;border-radius:8px;font-weight:bold;font-size:1.1rem;">
-  🌐 Building Cloud Business Applications for SKODA
-</div>
-
-      <div style="display:inline-block;background:#f4f4f4;padding:6px 14px;border-radius:50px;
-            font-weight:600;color:#004aad;border:2px solid #004aad;">
-  ⚡ Cloud Business Apps for SKODA
-</div>
-
-
-
-
-
-
-
-
-
       
-      <h1 id="title"> Applications for SKODA</h1>
+      <h1 id="title"> Descripción General del Proyecto</h1>
       
       <p class="lead">
         Este proyecto implementa una <strong>solución de negocio automatizada</strong> para SKODA que permite 
@@ -126,10 +98,11 @@
         La arquitectura aprovecha los servicios de Microsoft para garantizar escalabilidad, flexibilidad y soporte en la toma de decisiones.
       </p>
       <ul>
-        <li>🧱 <strong>Microsoft Fabric Warehouse y Data Factory</strong> para la gestión, transformación y consolidación de datos.</li>
-        <li>⚙️ <strong>Azure SQL</strong> como base de datos estructurada para registrar y administrar órdenes de trabajo.</li>
-        <li>⚡ <strong>Power Apps</strong> para el desarrollo de aplicaciones low-code orientadas al ingreso y edición de información.</li>
-        <li>📊 <strong>Power BI</strong> para el análisis de datos e inteligencia de negocios de autoservicio.</li>
+      <li>🧱 <strong>Microsoft Fabric Warehouse y Data Factory</strong> para la gestión, transformación y consolidación de datos.</li>
+      <li>⚙️ <strong>Azure SQL</strong> como base de datos estructurada para registrar y administrar órdenes de trabajo.</li>
+      <li>⚡ <strong>Power Apps</strong> para el desarrollo de aplicaciones low-code orientadas al ingreso y edición de información.</li>
+      <li>📊 <strong>Power BI</strong> para el análisis de datos e inteligencia de negocios de autoservicio.</li>
+      <li>🔄  <strong>Power Automate</strong> para automatización de procesos y envío de notificaciones inteligentes.</li>
       </ul>
     </section>
 
@@ -144,13 +117,13 @@
         ofrecer una solución completa, escalable y orientada a la gestión de órdenes de trabajo en los talleres.
       </p>
       <ul>
-        <li><strong>Data Sources:</strong> Los datos provienen de órdenes de trabajo registradas en talleres en los tallers. Estos se integran de forma semi-automatizados.</li>
-        <li><strong>Data Layer:</strong> Centraliza la información en una base de datos relacional en <em>Azure SQL</em>, con almacenamiento seguro y estructurado en la nube. También recibe datos directamente desde <em>Power Apps</em>.</li>
-        <li><strong>Application Layer:</strong> Utiliza <em>Microsoft Power Apps</em> como interfaz gráfica para el ingreso, edición y consulta de datos, conectada de forma nativa con Azure SQL.</li>
-        <li><strong>ETL Layer:</strong> Desarrollada con <em>Pipelines</em> y <em>Dataflows</em> de Microsoft Fabric, automatiza el flujo hacia el Data Warehouse e incorpora <em>Notebooks en Python</em> para validación y envío de notificaciones por correo.</li>
-        <li><strong>Data Warehouse Layer:</strong> Consolida mediante <em>Fabric Data Warehouse</em> los datos ya transformados, optimizando el análisis avanzado y la generación de reportes confiables.</li>
-        <li><strong>Presentation Layer:</strong> Ofrece reportes interactivos en <em>Power BI Service</em> y acceso en Excel, facilitando la toma de decisiones basada en información actualizada.</li>
-        <li><strong>User Access:</strong> Gestiona accesos según roles definidos en <em>Azure</em>, <em>Power Apps</em> y <em>Power BI</em>. Los usuarios reciben notificaciones automáticas tras cada actualización, garantizando trazabilidad y comunicación efectiva.</li>
+      <li><strong>Data Sources:</strong> Los datos provienen de órdenes de trabajo registradas en talleres en los tallers. Estos se integran de forma semi-automatizados.</li>
+      <li><strong>Data Layer:</strong> Centraliza la información en una base de datos relacional en <em>Azure SQL</em>, con almacenamiento seguro y estructurado en la nube. También recibe datos directamente desde <em>Power Apps</em>.</li>
+      <li><strong>Application Layer:</strong> Utiliza <em>Microsoft Power Apps</em> como interfaz gráfica para el ingreso, edición y consulta de datos, conectada de forma nativa con Azure SQL.</li>
+      <li><strong>ETL Layer:</strong> Desarrollada con <em>Pipelines</em> y <em>Dataflows</em> de Microsoft Fabric, automatiza el flujo hacia el Data Warehouse e incorpora <em>Notebooks en Python</em> para validación y envío de notificaciones por correo.</li>
+      <li><strong>Data Warehouse Layer:</strong> Consolida mediante <em>Fabric Data Warehouse</em> los datos ya transformados, optimizando el análisis avanzado y la generación de reportes confiables.</li>
+      <li><strong>Presentation Layer:</strong> Ofrece reportes interactivos en <em>Power BI Service</em> y acceso en Excel, facilitando la toma de decisiones basada en información actualizada.</li>
+      <li><strong>User Access:</strong> Gestiona accesos según roles definidos en <em>Azure</em>, <em>Power Apps</em> y <em>Power BI</em>. Los usuarios reciben notificaciones automáticas tras cada actualización, garantizando trazabilidad y comunicación efectiva.</li>
       </ul>
     </section>
 
@@ -172,26 +145,26 @@
       <p>Las seis tablas principales que estructuran la solución son:</p>
     
       <ul>
-        <li>📋 <strong>Órdenes de Trabajo</strong><br />
+      <li>📋 <strong>Órdenes de Trabajo</strong><br />
           Registra cada orden generada en los talleres, incluyendo datos de apertura, cierre, estado, tiempos de atención 
           y costos asociados.</li>
     
-        <li>🚗 <strong>Vehículos</strong><br />
+      <li>🚗 <strong>Vehículos</strong><br />
           Contiene información detallada de los autos atendidos: placa, modelo, año de fabricación, kilometraje 
           y vínculo con el cliente propietario.</li>
     
-        <li>👤 <strong>Clientes</strong><br />
+      <li>👤 <strong>Clientes</strong><br />
           Centraliza los datos de los clientes: identificación, nombre, apellidos, datos de contacto y 
           preferencias de comunicación.</li>
     
-        <li>🛠️ <strong>Servicios</strong><br />
+      <li>🛠️ <strong>Servicios</strong><br />
           Define los servicios de postventa ofrecidos: mantenimientos, reparaciones, garantías y repuestos. 
           Se relaciona con las órdenes de trabajo para análisis de costos e ingresos.</li>
     
-        <li>🏢 <strong>Talleres</strong><br />
+      <li>🏢 <strong>Talleres</strong><br />
           Registra las sedes autorizadas SKODA, incluyendo ubicación, capacidad operativa y disponibilidad de recursos.</li>
     
-        <li>🛒 <strong>Canales de Venta</strong><br />
+      <li>🛒 <strong>Canales de Venta</strong><br />
           Lista los distintos canales a través de los cuales se generan o facturan órdenes de trabajo 
           (presencial, online, convenios corporativos, etc.).</li>
       </ul>
@@ -201,7 +174,7 @@
         ofreciendo una base sólida para el <strong>almacenamiento, transformación y análisis</strong>.
       </p>
     </section>
-    
+
     <section class="card" aria-labelledby="datalayer-diagram">
       <h2 id="datalayer-diagram">📐 Modelo de Datos en Azure SQL</h2>
       <div style="text-align:center; margin:16px 0;">
@@ -332,6 +305,15 @@
         ingresan operaciones de ventas, clientes, vehículos, servicios y talleres. 
         Esta información se almacena en <strong>Azure SQL Database</strong>.
       </p>
+
+      <section class="card" aria-labelledby="datalayer-diagram">
+        <h2 id="datalayer-diagram">🖥️ Servidor Azure</h2>
+        <div style="text-align:center; margin:16px 0;">
+          <img src="Capa de Datos/Servidor Azure.jpeg" 
+               alt="Servidor Azure con modelo de datos del proyecto SKODA" 
+               class="responsive" />
+        </div>
+      </section>
     
       <h3>2. Pipeline de Transformación (Dataflow)</h3>
       <p>
@@ -405,6 +387,12 @@
       <div style="text-align:center; margin:16px 0;">
         <img src="Capa de Almacén de Datos/Data Warehouse - Model Layout.jpg" 
              alt="Vista del modelo de Data Warehouse del proyecto SKODA" 
+             class="responsive" />
+      </div>
+      
+      <div style="text-align:center; margin:16px 0;">
+        <img src="Capa de Almacén de Datos/Automate.jpeg" 
+             alt="Flujo de Automatización con Power Automate" 
              class="responsive" />
       </div>
     </section>
