@@ -42,19 +42,25 @@
       <div style="display:flex;align-items:center;gap:12px;">
         <div class="badge">Building Cloud Business Applications for SKODA</div>
       </div>
-      <h1 id="title">📌 Descripción General del Proyecto – Solución de Negocio para SKODA</h1>
+      <h1 id="title">🚗 SKODA Business Cloud: Gestión Inteligente de Órdenes de Taller</h1>
+      
       <p class="lead">
-        El presente proyecto tiene como objetivo implementar una <strong>solución de negocio</strong> para SKODA que permita <strong>registrar y modificar las órdenes de trabajo generadas en los talleres</strong>,
-        automatizar reportes y generar alertas basadas en indicadores clave del negocio.
+        Este proyecto implementa una <strong>solución de negocio automatizada</strong> para SKODA que permite 
+        <strong>registrar, modificar y dar seguimiento a las órdenes de trabajo generadas en talleres</strong>, 
+        integrando los distintos canales de venta y asesores en una sola plataforma digital.
       </p>
+      
       <p>
-        La propuesta integra una arquitectura moderna en la nube, diseñada para centralizar los datos operativos,
-        optimizar su procesamiento mediante procesos ETL y ofrecer acceso flexible y seguro a través de aplicaciones low-code
-        y herramientas de análisis de autoservicio.
+        La arquitectura propuesta está basada en la nube y diseñada para <strong>centralizar datos operativos</strong>, 
+        optimizar su procesamiento mediante <strong>flujos ETL</strong> y ofrecer acceso <strong>flexible y seguro</strong> 
+        a través de aplicaciones low-code y herramientas de autoservicio analítico.
       </p>
+      
       <p>
-        Se emplean tecnologías cloud como <strong>Azure SQL, Microsoft Fabric (Data Factory &amp; Warehouse), Power Apps, Power Automate y Power BI</strong>,
-        lo que brinda a SKODA una solución integral, automatizada y escalable para la <strong>toma de decisiones en tiempo real</strong>.
+        La solución integra tecnologías cloud como <strong>Azure SQL, Microsoft Fabric (Data Factory &amp; Warehouse), 
+        Power Apps, Power Automate y Power BI</strong>, brindando a SKODA una plataforma 
+        <strong>integral, escalable y en tiempo real</strong> que impulsa la eficiencia en la operación y la 
+        <strong>toma de decisiones basada en datos</strong>.
       </p>
     </section>
 
@@ -108,7 +114,7 @@
         ofrecer una solución completa, escalable y orientada a la gestión de órdenes de trabajo en los talleres.
       </p>
       <ul>
-        <li><strong>Data Sources:</strong> Los datos provienen de órdenes de trabajo registradas en talleres y de archivos complementarios en Excel. Estos se integran de forma inicial mediante procesos manuales o semi-automatizados.</li>
+        <li><strong>Data Sources:</strong> Los datos provienen de órdenes de trabajo registradas en talleres en los tallers. Estos se integran de forma semi-automatizados.</li>
         <li><strong>Data Layer:</strong> Centraliza la información en una base de datos relacional en <em>Azure SQL</em>, con almacenamiento seguro y estructurado en la nube. También recibe datos directamente desde <em>Power Apps</em>.</li>
         <li><strong>Application Layer:</strong> Utiliza <em>Microsoft Power Apps</em> como interfaz gráfica para el ingreso, edición y consulta de datos, conectada de forma nativa con Azure SQL.</li>
         <li><strong>ETL Layer:</strong> Desarrollada con <em>Pipelines</em> y <em>Dataflows</em> de Microsoft Fabric, automatiza el flujo hacia el Data Warehouse e incorpora <em>Notebooks en Python</em> para validación y envío de notificaciones por correo.</li>
@@ -122,7 +128,7 @@
       <h2 id="datalayer">🗄️ Data Layer (Capa de Datos) – Proyecto SKODA</h2>
     
       <p>
-        La base de datos del sistema postventa de <strong>SKODA</strong> ha sido diseñada para gestionar de forma eficiente las 
+        La base de datos del sistema <strong>SKODA</strong> ha sido diseñada para gestionar de forma eficiente las 
         <strong>órdenes de trabajo generadas en talleres</strong>, así como la información asociada a vehículos, clientes, 
         servicios y canales de venta. Su estructura normalizada garantiza integridad, consistencia y escalabilidad 
         en un entorno cloud.
@@ -141,7 +147,7 @@
           y costos asociados.</li>
     
         <li>🚗 <strong>Vehículos</strong><br />
-          Contiene información detallada de los autos atendidos: número de VIN, modelo, año de fabricación, kilometraje 
+          Contiene información detallada de los autos atendidos: placa, modelo, año de fabricación, kilometraje 
           y vínculo con el cliente propietario.</li>
     
         <li>👤 <strong>Clientes</strong><br />
@@ -397,33 +403,213 @@
     
       <!-- Imagen 1: Indicadores generales -->
       <div style="text-align:center; margin:16px 0;">
+        <img src="Capa de Presentación/01.Inicio.jpg" 
+             alt="Reporte de indicadores generales del proyecto SKODA" 
+             class="responsive" />
+      </div>
+
+      <div style="text-align:center; margin:16px 0;">
+        <img src="Capa de Presentación/02.Caso de Negocio.jpg" 
+             alt="Reporte de indicadores generales del proyecto SKODA" 
+             class="responsive" />
+      </div>
+
+      <div style="text-align:center; margin:16px 0;">
         <img src="Capa de Presentación/03.Indicadores.jpg" 
              alt="Reporte de indicadores generales del proyecto SKODA" 
              class="responsive" />
       </div>
-    
-      <!-- Imagen 2: Ticket promedio en talleres -->
+      
+      <div style="text-align:center; margin:16px 0;">
+        <img src="Capa de Presentación/04.Dashboard.jpg" 
+             alt="Reporte de indicadores generales del proyecto SKODA" 
+             class="responsive" />
+      </div>
+
+      <div style="text-align:center; margin:16px 0;">
+        <img src="Capa de Presentación/05.Reporte.jpg" 
+             alt="Reporte de indicadores generales del proyecto SKODA" 
+             class="responsive" />
+      </div>
+  
       <div style="text-align:center; margin:16px 0;">
         <img src="Capa de Presentación/06.Pregunta 1.jpg" 
-             alt="Reporte de Ticket Promedio en talleres - Mayo 2025" 
+             alt="Reporte de indicadores generales del proyecto SKODA" 
              class="responsive" />
-        <p style="text-align:center;"><em>Ticket promedio de los talleres en mayo 2025, resaltando el más alto.</em></p>
       </div>
-    
-      <!-- Imagen 3: Ticket promedio por servicio -->
+      
+      <div style="text-align:center; margin:16px 0;">
+        <img src="Capa de Presentación/06.Pregunta 1.1.jpg" 
+             alt="Reporte de indicadores generales del proyecto SKODA" 
+             class="responsive" />
+      </div>
+
+      <div style="text-align:center; margin:16px 0;">
+        <img src="Capa de Presentación/06.Pregunta 1.2.jpg" 
+             alt="Reporte de indicadores generales del proyecto SKODA" 
+             class="responsive" />
+      </div>
+
+      <div style="text-align:center; margin:16px 0;">
+        <img src="Capa de Presentación/07.Pregunta 2.jpg" 
+             alt="Reporte de indicadores generales del proyecto SKODA" 
+             class="responsive" />
+      </div>
+      
+      <div style="text-align:center; margin:16px 0;">
+        <img src="Capa de Presentación/07.Pregunta 2.1.jpg" 
+             alt="Reporte de indicadores generales del proyecto SKODA" 
+             class="responsive" />
+      </div>
+      
+      <div style="text-align:center; margin:16px 0;">
+        <img src="Capa de Presentación/07.Pregunta 2.2.jpg" 
+             alt="Reporte de indicadores generales del proyecto SKODA" 
+             class="responsive" />
+      </div>
+      
+      <div style="text-align:center; margin:16px 0;">
+        <img src="Capa de Presentación/08.Pregunta 3.jpg" 
+             alt="Reporte de indicadores generales del proyecto SKODA" 
+             class="responsive" />
+      </div>
+      
+      <div style="text-align:center; margin:16px 0;">
+        <img src="Capa de Presentación/08.Pregunta 3.1.jpg" 
+             alt="Reporte de indicadores generales del proyecto SKODA" 
+             class="responsive" />
+      </div>
+      
+      <div style="text-align:center; margin:16px 0;">
+        <img src="Capa de Presentación/08.Pregunta 3.2.jpg" 
+             alt="Reporte de indicadores generales del proyecto SKODA" 
+             class="responsive" />
+      </div>
+      
+      <div style="text-align:center; margin:16px 0;">
+        <img src="Capa de Presentación/09.Pregunta 4.jpg" 
+             alt="Reporte de indicadores generales del proyecto SKODA" 
+             class="responsive" />
+      </div>
+      
+      <div style="text-align:center; margin:16px 0;">
+        <img src="Capa de Presentación/09.Pregunta 4.1.jpg" 
+             alt="Reporte de indicadores generales del proyecto SKODA" 
+             class="responsive" />
+      </div>
+      
+      <div style="text-align:center; margin:16px 0;">
+        <img src="Capa de Presentación/09.Pregunta 4.2.jpg" 
+             alt="Reporte de indicadores generales del proyecto SKODA" 
+             class="responsive" />
+      </div>
+      
+      <div style="text-align:center; margin:16px 0;">
+        <img src="Capa de Presentación/10.Pregunta 5.jpg" 
+             alt="Reporte de indicadores generales del proyecto SKODA" 
+             class="responsive" />
+      </div>
+      
+      <div style="text-align:center; margin:16px 0;">
+        <img src="Capa de Presentación/10.Pregunta 5.1.jpg" 
+             alt="Reporte de indicadores generales del proyecto SKODA" 
+             class="responsive" />
+      </div>
+      
+      <div style="text-align:center; margin:16px 0;">
+        <img src="Capa de Presentación/10.Pregunta 5.2.jpg" 
+             alt="Reporte de indicadores generales del proyecto SKODA" 
+             class="responsive" />
+      </div>
+
       <div style="text-align:center; margin:16px 0;">
         <img src="Capa de Presentación/11.Pregunta 6.jpg" 
-             alt="Reporte de Ticket Promedio por servicio - Año 2025" 
+             alt="Reporte de indicadores generales del proyecto SKODA" 
              class="responsive" />
-        <p style="text-align:center;"><em>Ticket promedio por servicio en 2025, resaltando el más alto.</em></p>
       </div>
-    
-      <!-- Imagen 4: Ticket promedio por distrito -->
+      
+      <div style="text-align:center; margin:16px 0;">
+        <img src="Capa de Presentación/11.Pregunta 6.1.jpg" 
+             alt="Reporte de indicadores generales del proyecto SKODA" 
+             class="responsive" />
+      </div>
+      
+      <div style="text-align:center; margin:16px 0;">
+        <img src="Capa de Presentación/11.Pregunta 6.2.jpg" 
+             alt="Reporte de indicadores generales del proyecto SKODA" 
+             class="responsive" />
+      </div>
+      
       <div style="text-align:center; margin:16px 0;">
         <img src="Capa de Presentación/12.Pregunta 7.jpg" 
-             alt="Reporte de Ticket Promedio por distrito - Año 2025" 
+             alt="Reporte de indicadores generales del proyecto SKODA" 
              class="responsive" />
-        <p style="text-align:center;"><em>Distrito con el ticket promedio más alto en 2025.</em></p>
+      </div>
+      
+      <div style="text-align:center; margin:16px 0;">
+        <img src="Capa de Presentación/12.Pregunta 7.1.jpg" 
+             alt="Reporte de indicadores generales del proyecto SKODA" 
+             class="responsive" />
+      </div>
+      
+      <div style="text-align:center; margin:16px 0;">
+        <img src="Capa de Presentación/12.Pregunta 7.2.jpg" 
+             alt="Reporte de indicadores generales del proyecto SKODA" 
+             class="responsive" />
+      </div>
+
+      <div style="text-align:center; margin:16px 0;">
+        <img src="Capa de Presentación/13.Pregunta 8.jpg" 
+             alt="Reporte de indicadores generales del proyecto SKODA" 
+             class="responsive" />
+      </div>
+      
+      <div style="text-align:center; margin:16px 0;">
+        <img src="Capa de Presentación/13.Pregunta 8.1.jpg" 
+             alt="Reporte de indicadores generales del proyecto SKODA" 
+             class="responsive" />
+      </div>
+      
+      <div style="text-align:center; margin:16px 0;">
+        <img src="Capa de Presentación/13.Pregunta 8.2.jpg" 
+             alt="Reporte de indicadores generales del proyecto SKODA" 
+             class="responsive" />
+      </div>
+
+      <div style="text-align:center; margin:16px 0;">
+        <img src="Capa de Presentación/14.Pregunta 9.jpg" 
+             alt="Reporte de indicadores generales del proyecto SKODA" 
+             class="responsive" />
+      </div>
+      
+      <div style="text-align:center; margin:16px 0;">
+        <img src="Capa de Presentación/14.Pregunta 9.1.jpg" 
+             alt="Reporte de indicadores generales del proyecto SKODA" 
+             class="responsive" />
+      </div>
+      
+      <div style="text-align:center; margin:16px 0;">
+        <img src="Capa de Presentación/14.Pregunta 9.2.jpg" 
+             alt="Reporte de indicadores generales del proyecto SKODA" 
+             class="responsive" />
+      </div>
+
+      <div style="text-align:center; margin:16px 0;">
+        <img src="Capa de Presentación/15.Pregunta 10.jpg" 
+             alt="Reporte de indicadores generales del proyecto SKODA" 
+             class="responsive" />
+      </div>
+      
+      <div style="text-align:center; margin:16px 0;">
+        <img src="Capa de Presentación/15.Pregunta 10.1.jpg" 
+             alt="Reporte de indicadores generales del proyecto SKODA" 
+             class="responsive" />
+      </div>
+      
+      <div style="text-align:center; margin:16px 0;">
+        <img src="Capa de Presentación/15.Pregunta 10.2.jpg" 
+             alt="Reporte de indicadores generales del proyecto SKODA" 
+             class="responsive" />
       </div>
     </section>
 
